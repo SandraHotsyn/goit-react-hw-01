@@ -1,15 +1,15 @@
 import Stats from "../Stats/Stats";
-import userData from "../../userData.json";
+import css from "./Profile.module.css";
 
 export default function Profile({
   proff: { avatar, username, tag, location, stats },
 }) {
   return (
-    <div>
-      <img src={avatar} alt={username} />
-      <p>{username}</p>
-      <p>@{tag}</p>
-      <p>{location}</p>
+    <div className={css.container}>
+      <img className={css.avatar} src={avatar} alt={username} />
+      <p className={css.title}>{username}</p>
+      <p className={css.text}>@{tag}</p>
+      <p className={css.text}>{location}</p>
       <Stats statss={stats} />
     </div>
   );

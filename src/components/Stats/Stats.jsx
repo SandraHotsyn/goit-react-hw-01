@@ -1,17 +1,19 @@
+import css from "./Stats.module.css";
+
 export default function Stats({ statss: { followers, views, likes } }) {
   return (
-    <ul>
-      <li>
-        <span>Followers: </span>
-        <span>{followers}</span>
+    <ul className={css.stats}>
+      <li className={css.item}>
+        <span className={css.text}>Followers: </span>
+        <span className={css.text}>{followers}</span>
       </li>
-      <li>
-        <span>Views: </span>
-        <span>{views}</span>
+      <li className={css.item}>
+        <span className={css.text}>Views: </span>
+        <span className={css.text}>{views}</span>
       </li>
-      <li>
-        <span>Likes: </span>
-        <span>{likes}</span>
+      <li className={css.item}>
+        <span className={css.text}>Likes: </span>
+        <span className={css.text}>{likes}</span>
       </li>
     </ul>
   );
