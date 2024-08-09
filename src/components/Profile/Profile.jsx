@@ -1,12 +1,16 @@
+import Stats from "../Stats/Stats";
+import userData from "../../userData.json";
+
 export default function Profile({
-  proff: { imgUrl, fullName, nick, countryCity },
+  proff: { avatar, username, tag, location, stats },
 }) {
   return (
     <div>
-      <img src={imgUrl} alt={fullName} />
-      <p>{fullName}</p>
-      <p>@{nick}</p>
-      <p>{countryCity}</p>
+      <img src={avatar} alt={username} />
+      <p>{username}</p>
+      <p>@{tag}</p>
+      <p>{location}</p>
+      <Stats statss={stats} />
     </div>
   );
 }
