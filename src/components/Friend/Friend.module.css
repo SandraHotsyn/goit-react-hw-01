@@ -1,0 +1,20 @@
+.container {
+  border: 2px solid black;
+  border-radius: 5%;
+  margin-top: 10px;
+  padding: 0;
+  width: 100px;
+}
+.avatar {
+  border-radius: 5%;
+  max-width: 70px;
+  margin-top: 5px;
+}
+.title {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.status {
+  font-size: 22px;
+}

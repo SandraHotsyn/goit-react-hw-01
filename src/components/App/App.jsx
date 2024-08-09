@@ -1,11 +1,14 @@
 import ProfileList from "../ProfileList/ProfileList";
-import "./App.css";
+import FriendList from "../FriendList/FriendList";
+import style from "./App.module.css";
 import userData from "../../userData.json";
+import friends from "../../friends.json";
 
 export default function App() {
   return (
-    <div>
+    <div className={style.flex}>
       <ProfileList proffs={userData} />
+      <FriendList user={friends} />
     </div>
   );
 }
