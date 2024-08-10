@@ -1,10 +1,11 @@
 .transactionHistory {
-  width: 25%;
   border-collapse: collapse;
   margin: 25px auto; /* Центрування таблиці */
   table-layout: fixed;
   text-align: center;
   border: 2px solid black;
+  width: 910px;
+  font-size: 22px;
 }
 
 .transactionHeader {
@@ -12,6 +13,7 @@
   color: white;
   font-weight: bold;
   padding: 22px;
+  border: 2px solid black;
 }
 
 .transactionRow {
@@ -25,15 +27,18 @@
 
 .transactionRow:hover {
   background-color: #f1f1f1;
+  font-weight: bold;
 }
 
-.transactionRow td,
+.transactionBody td,
 .transactionHeader th {
+  text-align: center;
   padding: 12px;
   text-align: center;
   border: 2px solid black;
 }
 
+/* Приберіть фіксовану ширину для кожної комірки */
 .transactionHeader th {
   width: calc(100% / 3); /* Задає рівномірний поділ на три колонки */
 }
