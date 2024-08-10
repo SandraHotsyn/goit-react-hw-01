@@ -1,0 +1,39 @@
+.transactionHistory {
+  width: 25%;
+  border-collapse: collapse;
+  margin: 25px auto; /* Центрування таблиці */
+  table-layout: fixed;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.transactionHeader {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-weight: bold;
+  padding: 22px;
+}
+
+.transactionRow {
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.transactionRow:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.transactionRow:hover {
+  background-color: #f1f1f1;
+}
+
+.transactionRow td,
+.transactionHeader th {
+  padding: 12px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.transactionHeader th {
+  width: calc(100% / 3); /* Задає рівномірний поділ на три колонки */
+}
