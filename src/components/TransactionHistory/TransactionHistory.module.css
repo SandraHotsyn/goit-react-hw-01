@@ -38,7 +38,6 @@
   border: 2px solid black;
 }
 
-/* Приберіть фіксовану ширину для кожної комірки */
 .transactionHeader th {
-  width: calc(100% / 3); /* Задає рівномірний поділ на три колонки */
+  width: calc(100% / 3);
 }
