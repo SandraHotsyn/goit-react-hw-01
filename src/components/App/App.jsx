@@ -9,10 +9,8 @@ import transaction from "../../transactions.json";
 export default function App() {
   return (
     <div>
-      <div className={style.flex}>
-        <ProfileList proffs={userData} />
-        <FriendList user={friends} />
-      </div>
+      <ProfileList proffs={userData} />
+      <FriendList user={friends} />
       <TransactionHistory items={transaction} />
     </div>
   );
