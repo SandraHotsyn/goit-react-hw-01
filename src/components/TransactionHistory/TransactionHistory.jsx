@@ -1,7 +1,6 @@
-import transactions from "../../transactions.json";
 import css from "./TransactionHistory.module.css";
 
-export default function TransactionHistory({ item }) {
+export default function TransactionHistory({ transactions }) {
   return (
     <table className={css.transactionHistory}>
       <thead>

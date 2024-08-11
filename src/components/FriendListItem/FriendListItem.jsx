@@ -1,7 +1,9 @@
-import css from "./Friend.module.css";
+import css from "./FriendListItem.module.css";
 import clsx from "clsx";
 
-export default function Friend({ user: { avatar, name, isOnline } }) {
+export default function FriendListItem({
+  friends: { avatar, name, isOnline },
+}) {
   const cls = clsx(css.status, isOnline ? css.isOnline : css.isOffline);
 
   return (
